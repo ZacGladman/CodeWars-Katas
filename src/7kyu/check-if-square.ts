@@ -19,11 +19,11 @@ function isSquare(n: number): boolean {
     if(n === 0){
         return true
     }
-    let lastProduct = 0;
-    while(lastProduct < n && n>=0){
+    let previousProduct = 0;
+    while(previousProduct < n && n>=0){
         for(let i=0; i<=n; i++){
-            lastProduct = i*i;
-            if(lastProduct === n){
+            previousProduct = i*i;
+            if(previousProduct === n){
                 return true
             }
         }
