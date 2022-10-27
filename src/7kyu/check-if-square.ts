@@ -20,8 +20,8 @@ function isSquare(n: number): boolean {
         return true
     }
     let previousProduct = 0;
-    while(previousProduct < n && n>=0){
-        for(let i=0; i<=n; i++){
+    while(previousProduct < n && n>0){
+        for(let i=1; i<=n; i++){
             previousProduct = i*i;
             if(previousProduct === n){
                 return true
