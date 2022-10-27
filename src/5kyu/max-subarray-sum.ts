@@ -3,6 +3,9 @@ function maxSubarray(arr: number[]): number{
     while(arrCopy[0] <= 0){
       arrCopy.shift()
     }
+    if(arrCopy.length === 0){
+        return 0
+    }
     let maxSoFar = arrCopy[0]
     for(let i=0; i< arrCopy.length; i++){
       if(arrCopy[i] > 0){
